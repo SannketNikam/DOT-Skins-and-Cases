@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Iphone Skins & Cases</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/iphonedetails.css') }}">
+</head>
+
+<body>
+  <div>
+
+    <div class="iphonedetails-container">
+      <div class="iphonedetails-iphonedetails">
+        <img src="../static/playground_assets/rectangle241193-b95i-200h.png" alt="Rectangle241193"
+          class="iphonedetails-rectangle24" />
+        <div class="iphonedetails-t-o-p-n-a-v">
+          <span class="iphonedetails-text"><span><a href="./homepage">Home</a></span></span>
+          <span class="iphonedetails-text002">
+            <span><a href="./aboutus">Skins &amp; Cases</span>
+          </span>
+          <a href="./contact"><span class="iphonedetails-text004"><span>Contact</span></span></a>
+          <span class="iphonedetails-text006"><span><a href="./aboutus">About Us</span></span></a>
+          <span class="iphonedetails-text008"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            </span></span>
+          <span class="iphonedetails-text010">
+            <span><a href="./homepage#S-Ed">Special Edition</a></span>
+          </span>
+          <span class="iphonedetails-text012"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1194"
+            class="iphonedetails-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="iphonedetails-footer">
+          <span class="iphonedetails-text014">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="iphonedetails-services-footer">
+            <span class="iphonedetails-text016"><span>Product</span></span>
+            <span class="iphonedetails-text018">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="iphonedetails-text020">
+              <span><a style="box-shadow: none" href="./iphonedetails">iPhone</a></span>
+            </span>
+            <span class="iphonedetails-text022">
+              <span><a style="box-shadow: none" href="./googledetails">Google</a></span>
+            </span>
+            <span class="iphonedetails-text024">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="iphonedetails-company">
+            <span class="iphonedetails-text026"><span>Contact</span></span>
+            <span class="iphonedetails-text028"><span><a style="box-shadow: none"
+                  href="./contact#faq">FAQ</a></span></span>
+            <span class="iphonedetails-text030"><span><a href="./index">Login</a></span></span>
+            <span class="iphonedetails-text032">
+              <span><a style="box-shadow: none" href="./sign_up">Sign Up</a></span>
+            </span>
+          </div>
+          <div class="iphonedetails-get-help">
+            <span class="iphonedetails-text034"><span>Pages</span></span>
+            <span class="iphonedetails-text036"><span><a href="./homepage">Home</span></span></a>
+            <span class="iphonedetails-text038"><span><a href="./aboutus">About Us</span></span></a>
+            <span class="iphonedetails-text040"><span><a href="./contact">Contact</span></span></a>
+          </div>
+          <div class="iphonedetails-frame1150">
+            <span class="iphonedetails-text042"><span>Terms</span></span>
+            <span class="iphonedetails-text044"><span>Privacy</span></span>
+            <span class="iphonedetails-text046"><span>Cookies</span></span>
+          </div>
+          <div class="iphonedetails-socail-media">
+            <div class="iphonedetails-group3591">
+              <div class="iphonedetails-group3590">
+                <img src="../static/playground_assets/oval101194-n8va.svg" alt="Oval101194"
+                  class="iphonedetails-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1194-nqu.svg" alt="Vector1194"
+                    class="iphonedetails-vector" /></a>
+              </div>
+            </div>
+            <div class="iphonedetails-group3592">
+              <img src="../static/playground_assets/oval10copy31194-glbl.svg" alt="Oval10Copy31194"
+                class="iphonedetails-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1194-e7o.svg" alt="IconLucideIcon1194"
+                class="iphonedetails-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491194-qmk-200h.png" alt="Ellipse491194"
+              class="iphonedetails-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1194-8gif.svg" alt="bxlgmail1194"
+              class="iphonedetails-bxlgmail" />
+          </div>
+          <div class="iphonedetails-payments">
+            <img src="../static/playground_assets/vector1194-uf4w9.svg" alt="Vector1194"
+              class="iphonedetails-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1194-7hie.svg" alt="cibccpaypal1194"
+              class="iphonedetails-cibccpaypal" />
+            <img src="../static/playground_assets/vector1194-r0yx.svg" alt="Vector1194" class="iphonedetails-vector2" />
+            <img src="../static/playground_assets/vector1194-umd8.svg" alt="Vector1194" class="iphonedetails-vector3" />
+          </div>
+          <span class="iphonedetails-text048"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1194-hol-200w.png" alt="DayflowPlant1194"
+          class="iphonedetails-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle251194-bz8-300h.png" alt="Rectangle251194"
+          class="iphonedetails-rectangle25" />
+        <span class="iphonedetails-text050">
+          <span>
+            For now DOT offers a limited selection of iPhone, Samsung, Google
+            skins, including the latest iPhone 14 skins. Is the hype real?
+            Before out of stocks, Customize your Device skin to find out.
+          </span>
+        </span>
+        <span class="iphonedetails-text052">
+          <span>Iphone Skins &amp; Cases</span>
+        </span>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle281195-kboa-400h.png" alt="Rectangle281195"
+            class="iphonedetails-rectangle28" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle321195-3tdb-400h.png" alt="Rectangle321195"
+            class="iphonedetails-rectangle32" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle301195-4j3s-400h.png" alt="Rectangle301195"
+            class="iphonedetails-rectangle30" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle331195-6enc-400h.png" alt="Rectangle331195"
+            class="iphonedetails-rectangle33" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle311195-9fsd-400h.png" alt="Rectangle311195"
+            class="iphonedetails-rectangle31" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle341195-4lea-400h.png" alt="Rectangle341195"
+            class="iphonedetails-rectangle34" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle291195-lss5-400h.png" alt="Rectangle291195"
+            class="iphonedetails-rectangle29" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/rectangle351195-ja2b-400h.png" alt="Rectangle351195"
+            class="iphonedetails-rectangle35" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/image101195-tfvs-200w.png" alt="image101195"
+            class="iphonedetails-image10" />
+        </a>
+        <a href="./products#flw">
+          <img src="../static/playground_assets/image241195-1iny-200w.png" alt="image241195"
+            class="iphonedetails-image24" />
+        </a>
+        <span class="iphonedetails-text054"><span>Ran Leather</span></span>
+        <span class="iphonedetails-text056"><span>Ran Leather</span></span>
+        <span class="iphonedetails-text058"><span>Teardown</span></span>
+        <span class="iphonedetails-text060"><span>Teardown</span></span>
+        <span class="iphonedetails-text062"><span>Glitch Camo</span></span>
+        <span class="iphonedetails-text064"><span>Navy Camo</span></span>
+        <span class="iphonedetails-text066"><span>Sky Blue</span></span>
+        <span class="iphonedetails-text068"><span>Flat green</span></span>
+        <img src="../static/playground_assets/image221195-5729-200w.png" alt="image221195"
+          class="iphonedetails-image22" />
+        <img src="../static/playground_assets/image51195-s00o-200w.png" alt="image51195" class="iphonedetails-image5" />
+        <img src="../static/playground_assets/image261195-q8ys-200w.png" alt="image261195"
+          class="iphonedetails-image26" />
+        <span class="iphonedetails-text070"><span>₹499</span></span>
+        <span class="iphonedetails-text072"><span>₹499</span></span>
+        <span class="iphonedetails-text074"><span>₹499</span></span>
+        <span class="iphonedetails-text076"><span>₹499</span></span>
+        <span class="iphonedetails-text078"><span>₹499</span></span>
+        <span class="iphonedetails-text080"><span>₹499</span></span>
+        <span class="iphonedetails-text082"><span>₹499</span></span>
+        <span class="iphonedetails-text084"><span>₹499</span></span>
+        <span class="iphonedetails-text086"><span>₹699</span></span>
+        <span class="iphonedetails-text088"><span>₹699</span></span>
+        <span class="iphonedetails-text090"><span>₹699</span></span>
+        <span class="iphonedetails-text092"><span>₹699</span></span>
+        <span class="iphonedetails-text094"><span>₹699</span></span>
+        <span class="iphonedetails-text096"><span>₹699</span></span>
+        <span class="iphonedetails-text098"><span>₹699</span></span>
+        <span class="iphonedetails-text100"><span>₹699</span></span>
+        <img src="../static/playground_assets/image231195-k65n-200w.png" alt="image231195"
+          class="iphonedetails-image23" />
+        <img src="../static/playground_assets/image271195-e3f-200w.png" alt="image271195"
+          class="iphonedetails-image27" />
+        <img src="../static/playground_assets/image281195-uhfe-200w.png" alt="image281195"
+          class="iphonedetails-image28" />
+        <span class="iphonedetails-text102">
+          <span>Recommendations</span>
+        </span>
+        <div class="iphonedetails-buynow">
+          <span class="iphonedetails-text104"><span>₹499.00</span></span>
+          <span class="iphonedetails-text106"><span>₹699.00</span></span>
+          <span class="iphonedetails-text108">
+            <span>Red Code Icons</span>
+          </span>
+          <span class="iphonedetails-text110">
+            <span>
+              Our signature collaboration with MKBHD. During development, he
+              kept requesting that we make it "more black".
+            </span>
+            <br />
+          </span>
+          <div class="iphonedetails-buy-now-b-t-n">
+            <img src="../static/playground_assets/rectangle251195-cr1o-200h.png" alt="Rectangle251195"
+              class="iphonedetails-rectangle251" />
+            <a href="./checkout-page"><img src="../static/playground_assets/rectangle261195-wtr-200h.png"
+                alt="Rectangle261195" class="iphonedetails-rectangle26" /></a>
+            <a href="./checkout-page"><span class="iphonedetails-text113"><span>Buy Now</span></span></a>
+          </div>
+          <div class="iphonedetails-add-cart-b-t-n">
+            <img src="../static/playground_assets/rectangle251195-xjlh-200h.png" alt="Rectangle251195"
+              class="iphonedetails-rectangle252" />
+            <a href="./cart-page"><img src="../static/playground_assets/rectangle261195-3fbn-200h.png"
+                alt="Rectangle261195" class="iphonedetails-rectangle261" /></a>
+            <span class="iphonedetails-text115">
+              <a style="color: white; text-decoration:none;" href="./cart-page"><span>Add To Cart</span></a>
+            </span>
+          </div>
+          <img src="../static/playground_assets/image291195-836j-300w.png" alt="image291195"
+            class="iphonedetails-image29" />
+        </div>
+        <img src="../static/playground_assets/mkbhdred1198-x0sr-300w.png" alt="mkbhdred1198"
+          class="iphonedetails-mkbhdred" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

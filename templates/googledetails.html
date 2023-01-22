@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Google Skins & Cases</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/googledetails.css') }}">
+</head>
+
+<body>
+  <div>
+
+    <div class="googledetails-container">
+      <div class="googledetails-googledetails">
+        <img src="../static/playground_assets/rectangle241195-2z9c-200h.png" alt="Rectangle241195"
+          class="googledetails-rectangle24" />
+        <div class="googledetails-t-o-p-n-a-v">
+          <span class="googledetails-text"><span><a href="./homepage">Home</a></span></span>
+          <span class="googledetails-text002">
+            <a href="./products"><span>Skins &amp; Cases</a></span>
+          </span>
+          <span class="googledetails-text004"><span><a href="./contact">Contact</a></span></span>
+          <span class="googledetails-text006"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="googledetails-text008">
+            <span>
+              {% if allLogin|length == 0 and allSignUp|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+          {% else %}
+            {% for login in allLogin %}
+              {% if loop.last %}
+                {{ login.fullname }}
+              {% endif %}
+            {% endfor %}
+            {% for signup in allSignUp %}
+              {% if loop.last %}
+                {{ signup.fullname }}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+            </span>
+          </span>
+          <span class="googledetails-text010">
+            <span><a href="./homepage#S-Ed">Special Edition</a></span>
+          </span>
+          <span class="googledetails-text012"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1196"
+            class="googledetails-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="googledetails-footer">
+          <span class="googledetails-text014">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="googledetails-services-footer">
+            <span class="googledetails-text016"><span>Product</span></span>
+            <span class="googledetails-text018">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="googledetails-text020">
+              <span><a style="box-shadow: none" href="./iphonedetails">iPhone</a></span>
+            </span>
+            <span class="googledetails-text022">
+              <span><a style="box-shadow: none" href="./googledetails">Google</a></span>
+            </span>
+            <span class="googledetails-text024">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="googledetails-company">
+            <span class="googledetails-text026"><span>Contact</span></span>
+            <span class="googledetails-text028"><span><a style="box-shadow: none"
+                  href="./contact#faq">FAQ</a></span></span>
+            <span class="googledetails-text030"><span><a href="login">Login</a></span></span>
+            <span class="googledetails-text032">
+              <span><a style="box-shadow: none" href="./sign_up">Sign Up</a></span>
+            </span>
+          </div>
+          <div class="googledetails-get-help">
+            <span class="googledetails-text034"><span>Pages</span></span>
+            <span class="googledetails-text036"><span><a style="box-shadow: none"
+                  href="./homepage">Home</a></span></span>
+            <span class="googledetails-text038"><span><a style="box-shadow: none" href="./aboutus">About
+                  Us</a></span></span>
+            <span class="googledetails-text040"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="googledetails-frame1150">
+            <span class="googledetails-text042"><span>Terms</span></span>
+            <span class="googledetails-text044"><span>Privacy</span></span>
+            <span class="googledetails-text046"><span>Cookies</span></span>
+          </div>
+          <div class="googledetails-socail-media">
+            <div class="googledetails-group3591">
+              <div class="googledetails-group3590">
+                <img src="../static/playground_assets/oval101196-e5nk.svg" alt="Oval101196"
+                  class="googledetails-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1196-l3d.svg" alt="Vector1196"
+                    class="googledetails-vector" /></a>
+              </div>
+            </div>
+            <div class="googledetails-group3592">
+              <img src="../static/playground_assets/oval10copy31196-uary.svg" alt="Oval10Copy31196"
+                class="googledetails-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1196-fbxd.svg" alt="IconLucideIcon1196"
+                class="googledetails-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491196-szuq-200h.png" alt="Ellipse491196"
+              class="googledetails-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1196-3fto.svg" alt="bxlgmail1196"
+              class="googledetails-bxlgmail" />
+          </div>
+          <div class="googledetails-payments">
+            <img src="../static/playground_assets/vector1196-o4rd.svg" alt="Vector1196" class="googledetails-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1196-vt0j.svg" alt="cibccpaypal1196"
+              class="googledetails-cibccpaypal" />
+            <img src="../static/playground_assets/vector1196-dhx.svg" alt="Vector1196" class="googledetails-vector2" />
+            <img src="../static/playground_assets/vector1196-joy.svg" alt="Vector1196" class="googledetails-vector3" />
+          </div>
+          <span class="googledetails-text048"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1196-94db-200w.png" alt="DayflowPlant1196"
+          class="googledetails-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle251196-ykx-300h.png" alt="Rectangle251196"
+          class="googledetails-rectangle25" />
+        <span class="googledetails-text050">
+          <span>
+            For now DOT offers a limited selection of iPhone, Samsung, Google
+            skins, including the latest iPhone 14 skins. Is the hype real?
+            Before out of stocks, Customize your Device skin to find out.
+          </span>
+        </span>
+        <span class="googledetails-text052">
+          <span>Google Pixel Skins &amp; Cases</span>
+        </span>
+        <img src="../static/playground_assets/rectangle281196-e3cq-400h.png" alt="Rectangle281196"
+          class="googledetails-rectangle28" />
+        <img src="../static/playground_assets/rectangle321196-rk96-400h.png" alt="Rectangle321196"
+          class="googledetails-rectangle32" />
+        <img src="../static/playground_assets/rectangle301196-yfi6-400h.png" alt="Rectangle301196"
+          class="googledetails-rectangle30" />
+        <img src="../static/playground_assets/rectangle331196-2g5-400h.png" alt="Rectangle331196"
+          class="googledetails-rectangle33" />
+        <img src="../static/playground_assets/rectangle311196-8uiv-400h.png" alt="Rectangle311196"
+          class="googledetails-rectangle31" />
+        <img src="../static/playground_assets/rectangle341196-a7ni-400h.png" alt="Rectangle341196"
+          class="googledetails-rectangle34" />
+        <img src="../static/playground_assets/rectangle291196-7d82-400h.png" alt="Rectangle291196"
+          class="googledetails-rectangle29" />
+        <img src="../static/playground_assets/rectangle351196-yytn-400h.png" alt="Rectangle351196"
+          class="googledetails-rectangle35" />
+        <span class="googledetails-text054"><span>Black Camo</span></span>
+        <span class="googledetails-text056"><span>Seafoam Green</span></span>
+        <span class="googledetails-text058"><span>White Marble</span></span>
+        <span class="googledetails-text060"><span>Teardown</span></span>
+        <span class="googledetails-text062"><span>Sky Blue</span></span>
+        <span class="googledetails-text064"><span>Navy Camo</span></span>
+        <span class="googledetails-text066"><span>Teardown</span></span>
+        <span class="googledetails-text068"><span>Black Icons</span></span>
+        <span class="googledetails-text070"><span>₹499</span></span>
+        <span class="googledetails-text072"><span>₹499</span></span>
+        <span class="googledetails-text074"><span>₹499</span></span>
+        <span class="googledetails-text076"><span>₹499</span></span>
+        <span class="googledetails-text078"><span>₹499</span></span>
+        <span class="googledetails-text080"><span>₹499</span></span>
+        <span class="googledetails-text082"><span>₹499</span></span>
+        <span class="googledetails-text084"><span>₹499</span></span>
+        <span class="googledetails-text086"><span>₹699</span></span>
+        <span class="googledetails-text088"><span>₹699</span></span>
+        <span class="googledetails-text090"><span>₹699</span></span>
+        <span class="googledetails-text092"><span>₹699</span></span>
+        <span class="googledetails-text094"><span>₹699</span></span>
+        <span class="googledetails-text096"><span>₹699</span></span>
+        <span class="googledetails-text098"><span>₹699</span></span>
+        <span class="googledetails-text100"><span>₹699</span></span>
+        <span class="googledetails-text102">
+          <span>Recommendations</span>
+        </span>
+        <span class="googledetails-text104">
+          <span>The finest Lamborghini cosplay.</span>
+        </span>
+        <div class="googledetails-buynow">
+          <span class="googledetails-text106"><span>₹449.00</span></span>
+          <span class="googledetails-text108"><span>₹689.00</span></span>
+          <img src="../static/playground_assets/carbonblackpixel1197-a3ed-300w.png" alt="carbonblackpixel1197"
+            class="googledetails-carbonblackpixel" />
+          <img src="../static/playground_assets/carbonpixel1193-lrvf-300w.png" alt="carbonpixel1193"
+            class="googledetails-carbonpixel" />
+          <span class="googledetails-text110"><span>Black Carbon</span></span>
+          <span class="googledetails-text112">
+            <span>
+              Kevlar vests. Elite golf clubs. Custom car hoods. You can't
+              afford any of these things. Thanks to our Black Carbon material,
+              you can at least pretend
+            </span>
+          </span>
+          <div class="googledetails-buy-now-b-t-n">
+            <img src="../static/playground_assets/rectangle251197-z5h54-200h.png" alt="Rectangle251197"
+              class="googledetails-rectangle251" />
+            <img src="../static/playground_assets/rectangle261197-dfw-200h.png" alt="Rectangle261197"
+              class="googledetails-rectangle26" />
+            <span class="googledetails-text114"><span><a style="color: white; text-decoration: none;"
+                  href="./checkout-page">Buy Now</a></span></span>
+          </div>
+          <div class="googledetails-add-cart-b-t-n">
+            <img src="../static/playground_assets/rectangle251197-f6ia-200h.png" alt="Rectangle251197"
+              class="googledetails-rectangle252" />
+            <img src="../static/playground_assets/rectangle261197-k4m-200h.png" alt="Rectangle261197"
+              class="googledetails-rectangle261" />
+            <span class="googledetails-text116">
+              <a style="color: white; text-decoration:none;" href="./cart-page"><span>Add To Cart</span></a>
+            </span>
+          </div>
+        </div>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image301197-xgvm-200w.png" alt="image301197"
+            class="googledetails-image30" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image311197-sxou-200w.png" alt="image311197"
+            class="googledetails-image31" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image321197-ute-200w.png" alt="image321197"
+            class="googledetails-image32" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image341197-dge-200w.png" alt="image341197"
+            class="googledetails-image34" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image331197-r2se-200w.png" alt="image331197"
+            class="googledetails-image33" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image61193-gots-200w.png" alt="image61193"
+            class="googledetails-image6" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image51193-j4jq-200w.png" alt="image51193"
+            class="googledetails-image5" />
+        </a>
+        <a href="./products#flw2">
+          <img src="../static/playground_assets/image41193-9x3q-200w.png" alt="image41193"
+            class="googledetails-image4" />
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

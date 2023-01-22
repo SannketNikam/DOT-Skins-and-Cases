@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="english">
+  
+<head>
+  <title>DOT | Products </title>
+  <meta http-equiv = "refresh" content = "0; url =/products" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+</head>
+
+<body>
+  <div>
+
+    <div class="products-container">
+      <div class="products-products">
+        <img src="../static/playground_assets/rectangle241178-u8xf-300h.png" alt="Rectangle241178"
+          class="products-rectangle24" />
+        <span class="products-text">
+          <span>Grab your Designed Devices</span>
+        </span>
+        <div class="products-t-o-p-n-a-v">
+          <span class="products-text002"><span><a href="./homepage">Home</a></span></span>
+          <span class="products-text004"><span><a href="./products#flw">Skins &amp; Cases</a></span></span>
+          <span class="products-text006"><span><a href="./contact">Contact</a></span></span>
+          <span class="products-text008"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="products-text010"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </span></span>
+          <span class="products-text012"><span><a href="./homepage#S-Ed">Special Edition</a></span></span>
+          <span class="products-text014"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1179"
+            class="products-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="products-footer">
+          <span class="products-text016">
+            <span>Terms and Conditions are applied on import taxes.</span>
+          </span>
+          <img src="../static/playground_assets/rectangle4061171-5tz-500h.png" alt="Rectangle4061171"
+            class="products-rectangle406" />
+          <span class="products-text018">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="products-services-footer">
+            <span class="products-text020"><span>Product</span></span>
+            <span class="products-text022">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="products-text024"><span><a style="box-shadow: none"
+                  href="./iphonedetails">iPhone</a></span></span>
+            <span class="products-text026"><span><a style="box-shadow: none"
+                  href="./googledetails">Google</a></span></span>
+            <span class="products-text028">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="products-company">
+            <span class="products-text030"><span>Contact</span></span>
+            <span class="products-text032"><span><a href="./contact#faq">FAQ</a></span></span>
+            <span class="products-text034"><span><a href="./login">Login</a></span></span>
+            <span class="products-text036"><span><a style="box-shadow: none"
+                  href="./sign_up">Sign Up</a></span></span>
+          </div>
+          <div class="products-get-help">
+            <span class="products-text038"><span>Pages</span></span>
+            <span class="products-text040"><span><a style="box-shadow: none" href="./homepage">Home</a></span></span>
+            <span class="products-text042"><span><a style="box-shadow: none" href="./aboutus">About
+                  Us</a></span></span>
+            <span class="products-text044"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="products-frame1150">
+            <span class="products-text046"><span>Terms</span></span>
+            <span class="products-text048"><span>Privacy</span></span>
+            <span class="products-text050"><span>Cookies</span></span>
+          </div>
+          <div class="products-socail-media">
+            <div class="products-group3591">
+              <div class="products-group3590">
+                <img src="../static/playground_assets/oval101171-l15t.svg" alt="Oval101171" class="products-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1171-d6th.svg" alt="Vector1171"
+                    class="products-vector" /></a>
+              </div>
+            </div>
+            <div class="products-group3592">
+              <img src="../static/playground_assets/oval10copy31171-ryyt.svg" alt="Oval10Copy31171"
+                class="products-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1171-xlrrc.svg" alt="IconLucideIcon1171"
+                class="products-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491171-q0om-200h.png" alt="Ellipse491171"
+              class="products-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1171-up.svg" alt="bxlgmail1171" class="products-bxlgmail" />
+          </div>
+          <div class="products-payments">
+            <img src="../static/playground_assets/vector1171-t2tc.svg" alt="Vector1171" class="products-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1171-g7be.svg" alt="cibccpaypal1171"
+              class="products-cibccpaypal" />
+            <img src="../static/playground_assets/vector1171-g0jk.svg" alt="Vector1171" class="products-vector2" />
+            <img src="../static/playground_assets/vector1171-en6.svg" alt="Vector1171" class="products-vector3" />
+          </div>
+          <span class="products-text052"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1171-35cl-200w.png" alt="DayflowPlant1171"
+          class="products-dayflow-plant" />
+        <img src="../static/playground_assets/dayflowplant1193-4rwf-200w.png" alt="DayflowPlant1193"
+          class="products-dayflow-plant1" />
+        <img src="../static/playground_assets/rectangle251171-lwe-300h.png" alt="Rectangle251171"
+          class="products-rectangle25" />
+        <span class="products-text054">
+          <span>
+            For now DOT offers a limited selection of iPhone, Samsung, Google
+            skins, including the latest iPhone 14 skins. Is the hype real?
+            Before out of stocks, Customize your Device skin to find out.
+          </span>
+        </span>
+        <div class="products-iphones">
+          <span class="products-text056">
+            <span id="flw">Iphone Skins &amp; Cases</span>
+          </span>
+          <img src="../static/playground_assets/rectangle121193-ti0o-300w.png" alt="Rectangle121193"
+            class="products-rectangle12" />
+          <img src="../static/playground_assets/rectangle131193-7zoo-300w.png" alt="Rectangle131193"
+            class="products-rectangle13" />
+          <img src="../static/playground_assets/rectangle141193-47zj-300w.png" alt="Rectangle141193"
+            class="products-rectangle14" />
+          <img src="../static/playground_assets/rectangle151193-mzzb-300w.png" alt="Rectangle151193"
+            class="products-rectangle15" />
+          <span class="products-text058"><span>iPhone 14 Pro</span></span>
+          <span class="products-text060"><span>iPhone 14</span></span>
+          <span class="products-text062"><span>iPhone 13</span></span>
+          <span class="products-text064"><span>iPhone SE</span></span>
+          <span class="products-text066"><span>Apple</span></span>
+          <span class="products-text068"><span>Apple</span></span>
+          <span class="products-text070"><span>Apple</span></span>
+          <span class="products-text072"><span>Apple</span></span>
+          <a href="./iphonedetails"><img src="../static/playground_assets/image181173-3k5b-200w.png" alt="image181173"
+              class="products-image18" /></a>
+          <a href="./iphonedetails"><img src="../static/playground_assets/image191173-p1th-300h.png" alt="image191173"
+              class="products-image19" /></a>
+          <a href="./iphonedetails"><img src="../static/playground_assets/image201173-8igt-300h.png" alt="image201173"
+              class="products-image20" /></a>
+          <a href="./iphonedetails"><img src="../static/playground_assets/image211173-d1vr-300h.png" alt="image211173"
+              class="products-image21" /></a>
+        </div>
+        <div class="products-iphones1">
+          <span class="products-text074">
+            <span id="flw3">OnePlus Skins &amp; Cases</span>
+          </span>
+          <img src="../static/playground_assets/rectangle121193-puna-300w.png" alt="Rectangle121193"
+            class="products-rectangle121" />
+          <img src="../static/playground_assets/rectangle131193-r7o-300w.png" alt="Rectangle131193"
+            class="products-rectangle131" />
+          <img src="../static/playground_assets/rectangle141193-c79s-300w.png" alt="Rectangle141193"
+            class="products-rectangle141" />
+          <img src="../static/playground_assets/rectangle151193-sija-300w.png" alt="Rectangle151193"
+            class="products-rectangle151" />
+          <span class="products-text076"><span>10 Pro</span></span>
+          <span class="products-text078"><span>9 5G</span></span>
+          <span class="products-text080"><span>9 Pro</span></span>
+          <span class="products-text082"><span>8T</span></span>
+          <span class="products-text084"><span>OnePlus</span></span>
+          <span class="products-text086"><span>OnePlus</span></span>
+          <span class="products-text088"><span>OnePlus</span></span>
+          <span class="products-text090"><span>OnePlus</span></span>
+        </div>
+        <div class="products-google">
+          <span class="products-text092">
+            <span id="flw2">Google Pixel Skins &amp; Cases</span>
+          </span>
+          <img src="../static/playground_assets/rectangle121193-1i8-300w.png" alt="Rectangle121193"
+            class="products-rectangle122" />
+          <img src="../static/playground_assets/rectangle131193-4f0j-300w.png" alt="Rectangle131193"
+            class="products-rectangle132" />
+          <img src="../static/playground_assets/rectangle141193-p5w-300w.png" alt="Rectangle141193"
+            class="products-rectangle142" />
+          <span class="products-text094"><span>Pixel 7 Pro</span></span>
+          <span class="products-text096"><span>Pixel 7</span></span>
+          <span class="products-text098"><span>Pixel 6a</span></span>
+          <span class="products-text100"><span>Google</span></span>
+          <span class="products-text102"><span>Google</span></span>
+          <span class="products-text104"><span>Google</span></span>
+          <a href="./googledetails"><img src="../static/playground_assets/pixel7pro1173-ooen-200w.png"
+              alt="pixel7pro1173" class="products-pixel7pro" /></a>
+          <a href="./googledetails"><img src="../static/playground_assets/pixel71173-y83b-200w.png" alt="pixel71173"
+              class="products-pixel7" /></a>
+          <a href="./googledetails"><img src="../static/playground_assets/pixel6a1173-wez-200w.png" alt="pixel6a1173"
+              class="products-pixel6a" /></a>
+        </div>
+        <a href="./oneplusdetails"><img src="../static/playground_assets/image121172-j91j-200w.png" alt="image121172"
+            class="products-image12" /></a>
+        <a href=".//oneplusdetails"><img src="../static/playground_assets/image111172-kdn-200w.png" alt="image111172"
+            class="products-image11" /></a>
+        <a href="./oneplusdetails"><img src="../static/playground_assets/image141173-5cn-200w.png" alt="image141173"
+            class="products-image14" /></a>
+        <a href="./oneplusdetails"><img src="../static/playground_assets/image131172-645n-200w.png" alt="image131172"
+            class="products-image13" /></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Go to Cart </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/cart-page.css') }}">
+</head>
+
+<body>
+  <div>
+
+    <div class="cart-page-container">
+      <div class="cart-page-checkoutpage">
+        <img src="../static/playground_assets/rectangle4121602-6x8b-1300w.png" alt="Rectangle4121602"
+          class="cart-page-rectangle412" />
+        <img src="../static/playground_assets/rectangle4141602-ua2fj-1300w.png" alt="Rectangle4141602"
+          class="cart-page-rectangle414" />
+        <span class="cart-page-text"><span>iphone 14 Pro Skin</span></span>
+        <span class="cart-page-text02"><span>Google Pixel 7 Skin</span></span>
+        <img src="../static/playground_assets/rectangle4131602-7y5k-1300w.png" alt="Rectangle4131602"
+          class="cart-page-rectangle413" />
+        <img src="../static/playground_assets/rectangle241591-nvd-200h.png" alt="Rectangle241591"
+          class="cart-page-rectangle24" />
+        <div class="cart-page-t-o-p-n-a-v">
+          <span class="cart-page-text04"><span><a href="./homepage">Home</a></span></span>
+          <span class="cart-page-text06"><span><a href="./products">Skins &amp; Cases</a></span></span>
+          <span class="cart-page-text08"><span><a href="./contact">Contact</a></span></span>
+          <span class="cart-page-text10"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="cart-page-text12"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </span></span>
+          <span class="cart-page-text14"><span><a href="./homepage#S-Ed">Special Edition</a></span></span>
+          <span class="cart-page-text16"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1591"
+                  class="cart-page-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="cart-page-footer">
+          <span class="cart-page-text18">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="cart-page-services-footer">
+            <span class="cart-page-text20"><span>Product</span></span>
+            <span class="cart-page-text22">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="cart-page-text24"><span><a style="box-shadow: none"
+                  href="./iphonedetails">iPhone</a></span></span>
+            <span class="cart-page-text26"><span><a style="box-shadow: none"
+                  href="./googledetails">Google</a></span></span>
+            <span class="cart-page-text28">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="cart-page-company">
+            <span class="cart-page-text30"><span>Contact</span></span>
+            <span class="cart-page-text32"><span><a style="box-shadow: none" href="./contact#faq">FAQ</a></span></span>
+            <span class="cart-page-text34"><span><a href="./login">Login</a></span></span>
+            <span class="cart-page-text36"><span><a style="box-shadow: none"
+                  href="./sign_up">Sign Up</a></span></span>
+          </div>
+          <div class="cart-page-get-help">
+            <span class="cart-page-text38"><span>Pages</span></span>
+            <span class="cart-page-text40"><span><a href="./homepage"><a style="box-shadow: none"
+                    href="./homepage">Home</a></a></span></span>
+            <span class="cart-page-text42"><span><a href="./aboutus"><a style="box-shadow: none" href="./aboutus">About
+                    Us</a></a></span></span>
+            <span class="cart-page-text44"><span><a href="./contact"><a style="box-shadow: none"
+                    href="./contact#c-r7">Contact</a></a></span></span>
+          </div>
+          <div class="cart-page-frame1150">
+            <span class="cart-page-text46"><span>Terms</span></span>
+            <span class="cart-page-text48"><span>Privacy</span></span>
+            <span class="cart-page-text50"><span>Cookies</span></span>
+          </div>
+          <div class="cart-page-socail-media">
+            <div class="cart-page-group3591">
+              <div class="cart-page-group3590">
+                <img src="../static/playground_assets/oval101591-hlym.svg" alt="Oval101591" class="cart-page-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1591-6378.svg" alt="Vector1591"
+                    class="cart-page-vector" /></a>
+              </div>
+            </div>
+            <div class="cart-page-group3592">
+              <img src="../static/playground_assets/oval10copy31591-h6fl.svg" alt="Oval10Copy31591"
+                class="cart-page-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1591-rt.svg" alt="IconLucideIcon1591"
+                class="cart-page-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491591-dbro-200h.png" alt="Ellipse491591"
+              class="cart-page-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1591-1vt.svg" alt="bxlgmail1591" class="cart-page-bxlgmail" />
+          </div>
+          <div class="cart-page-payments">
+            <img src="../static/playground_assets/vector1591-w7en.svg" alt="Vector1591" class="cart-page-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1591-xgsm.svg" alt="cibccpaypal1591"
+              class="cart-page-cibccpaypal" />
+            <img src="../static/playground_assets/vector1591-v19c.svg" alt="Vector1591" class="cart-page-vector2" />
+            <img src="../static/playground_assets/vector1591-yxg.svg" alt="Vector1591" class="cart-page-vector3" />
+          </div>
+          <span class="cart-page-text52"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1591-zrtm-200w.png" alt="DayflowPlant1591"
+          class="cart-page-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle251591-grsef-300h.png" alt="Rectangle251591"
+          class="cart-page-rectangle25" />
+        <span class="cart-page-text54">
+          <span>
+            <span>
+              To receive your order, please ensure that the delivery address
+              below matches your official KYC documents for customs clearance.
+            </span>
+            <br />
+            <span></span>
+          </span>
+        </span>
+        <span class="cart-page-text59"><span>Buy from Cart</span></span>
+        <span class="cart-page-text61"><span>₹449.00</span></span>
+        <span class="cart-page-text63"><span>₹449.00</span></span>
+        <span class="cart-page-text65"><span>₹689.00</span></span>
+        <span class="cart-page-text67"><span>₹689.00</span></span>
+        <span class="cart-page-text69"><span>Oneplus 10r Skin</span></span>
+        <div class="cart-page-buynow">
+          <span class="cart-page-text71"><span>₹449.00</span></span>
+          <span class="cart-page-text73"><span>₹689.00</span></span>
+          <span class="cart-page-text75"><span>Black Camo</span></span>
+          <span class="cart-page-text77">
+            <span>
+              Are you a nocturnal basement dweller who hasn't seen the sun in
+              years? Excellent. Black Camo complements your life choices
+              perfectly.
+            </span>
+          </span>
+          <div class="cart-page-buy-now-b-t-n">
+            <img src="../static/playground_assets/rectangle251592-28lf-200h.png" alt="Rectangle251592"
+              class="cart-page-rectangle251" />
+            <a href="./checkout-page"><img src="../static/playground_assets/rectangle261592-ww5m-200h.png"
+                alt="Rectangle261592" class="cart-page-rectangle26" /></a>
+            <span class="cart-page-text79"><span><a style="color: white; text-decoration:none;"
+                  href="./checkout-page">Buy Now</a></span></span>
+          </div>
+        </div>
+        <a href="./checkout-page">
+          <div  href="./checkout-page" class="cart-page-buy-now-b-t-n1">
+            <img href="./checkout-page" src="../static/playground_assets/rectangle251602-d8aa-200h.png" alt="Rectangle251602"
+            class="cart-page-rectangle253" />
+            <a href="./checkout-page"><img href="./checkout-page" src="../static/playground_assets/rectangle261602-y86s-200h.png"
+              alt="Rectangle261602" class="cart-page-rectangle262" /></a>
+              <span href="./checkout-page" class="cart-page-text79"><span href="./checkout-page"><a href="./checkout-page" style="color: white; text-decoration:none;" href="./checkout-page">Buy
+                Now</a></span></span>
+              </div>
+          </a>
+        <div class="cart-page-buy-now-b-t-n2">
+          <img src="../static/playground_assets/rectangle251602-d8aa-200h.png" alt="Rectangle251602"
+            class="cart-page-rectangle253" />
+          <a href="./checkout-page"><img src="../static/playground_assets/rectangle261602-y86s-200h.png"
+              alt="Rectangle261602" class="cart-page-rectangle262" /></a>
+          <span class="cart-page-text79"><span><a style="color: white; text-decoration:none;" href="./checkout-page">Buy
+                Now</a></span></span>
+        </div>
+        <img src="../static/playground_assets/onepluscamonavy1592-hr4-200w.png" alt="onepluscamonavy1592"
+          class="cart-page-onepluscamonavy" />
+        <img src="../static/playground_assets/onepuscampblack1592-zt8-200w.png" alt="onepuscampblack1592"
+          class="cart-page-onepuscampblack" />
+        <div class="cart-page-buynow1">
+          <span class="cart-page-text85"><span>Red Code Icons</span></span>
+          <span class="cart-page-text87">
+            <span>
+              Our signature collaboration with MKBHD. During development, he
+              kept requesting that we make it "more black". Our ink vats may
+              be a crime scene, but Triple Black ICONS has finally passed the
+              test.
+            </span>
+          </span>
+          <img src="../static/playground_assets/image291602-4fi-200w.png" alt="image291602" class="cart-page-image29" />
+          <img src="../static/playground_assets/mkbhdred1602-gc8-200w.png" alt="mkbhdred1602"
+            class="cart-page-mkbhdred" />
+        </div>
+        <div class="cart-page-buynow2">
+          <span class="cart-page-text89"><span>Carbon Fibre</span></span>
+          <span class="cart-page-text91">
+            <span>
+              Our signature collaboration with athking. we arehere for carbon straight out from lambo matte black carbon
+              fibre materials, Our ink vats may
+              be a crime scene, but Black and blue has finally passed the
+              test.
+            </span>
+          </span>
+        </div>
+        <img src="../static/playground_assets/carbonblackpixel1602-qlj-200w.png" alt="carbonblackpixel1602"
+          class="cart-page-carbonblackpixel" />
+        <img src="../static/playground_assets/carbonpixel1602-9dnk-200w.png" alt="carbonpixel1602"
+          class="cart-page-carbonpixel" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

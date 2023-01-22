@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Contact Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- <meta http-equiv = "refresh" content = "0; url =/products" /> -->
+  <style data-tag="default-style-sheet">
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+
+  <!-- JavaScript -->
+  <script>
+    function pop() {
+      alert('Your response was successfully submitted.');
+      window.location.href = 'products'
+    }
+    function meta() {
+      var link = document.createElement('meta');  link.setAttribute('http-equiv', 'refresh');  link.content = "0; url =/products";
+    }
+  </script>
+</head>
+
+<body>
+  <div>
+
+    <div class="contact-container">
+      <div class="contact-contact">
+        <img src="../static/playground_assets/rectangle251102-gkx-2000w.png" alt="Rectangle251102"
+          class="contact-rectangle25" />
+        <img id="ctn" src="../static/playground_assets/rectangle241008-zkyp-2000w.png" alt="Rectangle241008"
+          class="contact-rectangle24" />
+        <div class="contact-t-o-p-n-a-v">
+          <span class="contact-text"><span><a href="./homepage">Home</a></span></span>
+          <span class="contact-text02"><span><a href="./products">Skins &amp; Cases</a></span></span>
+          <span class="contact-text04"><span><a href="./contact#qsn">Contact</a></span></span>
+          <span class="contact-text06"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="contact-text08"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </span></span>
+          <span class="contact-text10"><span><a href="./homepage#S-Ed">Special Edition</a></span></span>
+          <span class="contact-text12"><span><a style="text-decoration: none;" href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1001"
+            class="contact-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <span class="contact-text14"><span>Find us here !</span></span>
+        <span class="contact-text16"><span>Address</span></span>
+        <span class="contact-text18">
+          <span>
+            We'd love to hear from you - please use the form to send us your
+            message or ideas.
+          </span>
+        </span>
+        <span class="contact-text20">
+          <span class="contact-text21">
+            <span>131, Mayur Colony, Kothrud,Pune 411 038 MH INDIA</span>
+            <br />
+            <span></span>
+          </span>
+          <span>Email: dotskins@gmail.com</span>
+        </span>
+        <img src="../static/playground_assets/coolkidsselect1001-es58-200h.png" alt="CoolKidsSelect1001"
+          class="contact-cool-kids-select" />
+        <img id="qsn" src="../static/playground_assets/rectangle71001-eipm-1100h.png" alt="Rectangle71001"
+          class="contact-rectangle7" />
+        <span class="contact-text26">
+          <span>
+            If you have a question you'd like to ask us, please contact us
+            using the form below!
+          </span>
+        </span>
+
+        <!-- Feedback From -->
+        <form action="{{ url_for('tp1') }}" method="POST">
+          <label><span class="contact-text28"><span>First Name</span></span></label>
+          <input class="contact-rectangle407" type="text" name="fname" title="fname" required>
+          <label><span class="contact-text30"><span>Email</span></span></label>
+          <input class="contact-rectangle409" type="email" name="emailID" title="emailID" required>
+          <label><span class="contact-text32"><span>Message</span></span></label>
+          <textarea class="contact-rectangle411" name="message" title="message" required></textarea>
+          <label><span class="contact-text34"><span>Phone Number</span></span></label>
+          <input class="contact-rectangle410" id="phone" type="tel" name="phone" title="phone" maxlength="10" required>
+          <label><span class="contact-text36"><span>Last Name</span></span></label>
+          <input class="contact-rectangle408" type="text" name="lname" title="lname" required>
+          <span class="contact-text38"><span>We are listening</span></span>
+          <img src="../static/playground_assets/samsungpink5797-7wva-200w.png" alt="samsungpink5797"
+            class="contact-samsungpink" />
+            <button onclick="pop(), meta()" type="submit" href="{{ url_for('tp1') }}" class="contact-b-t-n2">
+              <img src="../static/playground_assets/rectangle251001-hm2i-200h.png" alt="Rectangle251001"b class="contact-rectangle251" />
+              <img src="../static/playground_assets/rectangle261001-if3b-200h.png" alt="Rectangle261001" class="contact-rectangle26" />
+              <span class="contact-text40"><span>Send</span></span>
+            </button>
+        </form>
+      </div>
+      <img src="../static/playground_assets/dayflowplant1001-nusn-200w.png" alt="DayflowPlant1001"
+        class="contact-dayflow-plant" />
+      <div class="contact-frame16"></div>
+      <span class="contact-text42">
+        <span id="faq">Frequent ask questions</span>
+      </span>
+      <span class="contact-text44">
+        <span>We are here , to solve your doubts in one click</span>
+      </span>
+      <div class="contact-accordion">
+        <img src="../static/playground_assets/iconfeathericoni391-zrc.svg" alt="IconFeatherIconI391"
+          class="contact-icon-feather-icon" />
+        <span class="contact-text46">
+          <span>Matte black Skins and Cases</span>
+        </span>
+      </div>
+      <div class="contact-component2">
+        <div class="contact-frame1131">
+          <img src="../static/playground_assets/iconfeathericoni391-mzp5.svg" alt="IconFeatherIconI391"
+            class="contact-icon-feather-icon1" />
+          <span class="contact-text48">
+            <span>What are Skinnova skins?</span>
+          </span>
+        </div>
+        <div class="contact-frame1132">
+          <div class="contact-frame1133">
+            <span class="contact-text50">
+              <span>
+                <span>
+                  Skinnova skins are thin, adhesive, textured/non-textured
+                  and opaque film layers that protect the back and sides of
+                  your device from scratches and fingerprints. These skins
+                  are made only from authentic 3M materials and are
+                  available in many textures.
+                </span>
+                <br />
+                <span>
+                  DOT Website gives you everything in one go have a look !!
+                </span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-footer">
+        <span class="contact-text55">
+          <span>
+            Looking to find out more? Join our Team now. Get in touch with
+            us.
+          </span>
+        </span>
+        <div class="contact-services-footer">
+          <span class="contact-text57"><span>Product</span></span>
+          <span class="contact-text59"><span><a style="box-shadow: none" href="./products">Skin &amp;
+                Cases</a></span></span>
+          <span class="contact-text61"><span><a style="box-shadow: none" href="./iphonedetails">iPhone</a></span></span>
+          <span class="contact-text63"><span><a style="box-shadow: none" href="./googledetails">Google</a></span></span>
+          <span class="contact-text65"><span><a style="box-shadow: none" href="./oneplusdetails">One
+                Plus</a></span></span>
+        </div>
+        <div class="contact-company">
+          <span class="contact-text67"><span>Contact</span></span>
+          <span class="contact-text69"><span><a style="box-shadow: none" href="./contact#faq">FAQ</a></span></span>
+          <span class="contact-text71"><span><a href="login">Login</a></span></span>
+          <span class="contact-text73"><span><a style="box-shadow: none"
+                href="./sign_up">Sign Up</a></span></span>
+        </div>
+        <div class="contact-get-help">
+          <span class="contact-text75"><span>Pages</span></span>
+          <span class="contact-text77"><span><a style="box-shadow: none" href="./homepage">Home</a></span></span>
+          <span class="contact-text79"><span><a style="box-shadow: none" href="./aboutus">About
+                Us</a></span></span>
+          <span class="contact-text81"><span><a style="box-shadow: none" href="./contact#c-r7">Contact</a></span></span>
+        </div>
+        <div class="contact-frame1150">
+          <span class="contact-text83"><span>Terms</span></span>
+          <span class="contact-text85"><span>Privacy</span></span>
+          <span class="contact-text87"><span>Cookies</span></span>
+        </div>
+        <div class="contact-socail-media">
+          <div class="contact-group3591">
+            <div class="contact-group3590">
+              <img src="../static/playground_assets/oval101172-9yzj.svg" alt="Oval101172" class="contact-oval10" />
+              <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                <img src="../static/playground_assets/vector1172-64as.svg" alt="Vector1172"
+                  class="contact-vector" /></a>
+            </div>
+          </div>
+          <div class="contact-group3592">
+            <img src="../static/playground_assets/oval10copy31172-prrr.svg" alt="Oval10Copy31172"
+              class="contact-oval10copy3" />
+            <img src="../static/playground_assets/iconlucideicon1172-o1st.svg" alt="IconLucideIcon1172"
+              class="contact-icon-lucide-icon" />
+          </div>
+          <img src="../static/playground_assets/ellipse491172-kynr-200h.png" alt="Ellipse491172"
+            class="contact-ellipse49" />
+          <img src="../static/playground_assets/bxlgmail1172-sxik.svg" alt="bxlgmail1172" class="contact-bxlgmail" />
+        </div>
+        <div class="contact-payments">
+          <img src="../static/playground_assets/vector1172-leq4.svg" alt="Vector1172" class="contact-vector1" />
+          <img src="../static/playground_assets/cibccpaypal1172-br1d.svg" alt="cibccpaypal1172"
+            class="contact-cibccpaypal" />
+          <img src="../static/playground_assets/vector1172-hvrv.svg" alt="Vector1172" class="contact-vector2" />
+          <img src="../static/playground_assets/vector1172-pgf2.svg" alt="Vector1172" class="contact-vector3" />
+        </div>
+        <span class="contact-text89"><span>DOT.</span></span>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

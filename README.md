@@ -9,7 +9,7 @@
 ## High-Fidelity UI Design:
 ![image](https://user-images.githubusercontent.com/77570082/214530841-27823847-769d-4e62-9c3e-3f88ccb869df.png)
 <!-- ![image](https://user-images.githubusercontent.com/77570082/214527687-b8f1943d-0079-4ca8-9e3a-f6d956b4b8b2.png) -->
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![image](https://user-images.githubusercontent.com/77570082/214530879-5f0bb3a5-a312-4856-8886-aa24f47589bb.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![image](https://user-images.githubusercontent.com/77570082/214530879-5f0bb3a5-a312-4856-8886-aa24f47589bb.png)
 
 
 ## PROJECT SCOPE:

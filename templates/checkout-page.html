@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Checkout | DOT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- <meta http-equiv = "refresh" content = "0; url =/homepage" /> -->
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/checkout-page.css') }}">
+  <!-- JavaScript -->
+  {% block javascript %}
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+  {% endblock %}
+  <script>
+    function pop() {
+      // jinja template
+      alert('Order Confirmed Successfully!\n____________\n\n Continue Shopping!\n____________');
+      window.location.href = './homepage'
+    }
+
+    function meta() {
+      var link = document.createElement('meta');  link.setAttribute('http-equiv', 'refresh');  link.content = "0; url ={{ url_for('homepage') }}";
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <div>
+
+    <div class="checkout-page-container">
+      <div class="checkout-page-checkoutpage">
+        <img src="../static/playground_assets/rectangle241602-nz0i-200h.png" alt="Rectangle241602"
+          class="checkout-page-rectangle24" />
+        <span class="checkout-page-text"><span>Checkout</span></span>
+        <div class="checkout-page-t-o-p-n-a-v">
+          <span class="checkout-page-text02"><span><a href="./homepage">Home</a></span></span>
+          <span class="checkout-page-text04">
+            <span><a href="./products">Skins &amp; Cases</a></span>
+          </span>
+          <span class="checkout-page-text06"><span><a href="./contact">Contact</a></span></span>
+          <span class="checkout-page-text08"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="checkout-page-text10">
+            <span>
+              {% if allLogin|length == 0 %}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+              {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            </span>
+          </span>
+          <span class="checkout-page-text12">
+            <span><a href="./homepage#S-Ed">Special Edition</a></span>
+          </span>
+          <span class="checkout-page-text14"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1602"
+              class="checkout-page-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="checkout-page-footer">
+          <span class="checkout-page-text16">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with us.
+            </span>
+          </span>
+          <div class="checkout-page-services-footer">
+            <span class="checkout-page-text18"><span>Product</span></span>
+            <span class="checkout-page-text20">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="checkout-page-text22">
+              <span><a style="box-shadow: none" href="./iphonedetails">iPhone</a></span>
+            </span>
+            <span class="checkout-page-text24"><span><a style="box-shadow: none"
+                  href="./googledetails">Google</a></span></span>
+            <span class="checkout-page-text26">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="checkout-page-company">
+            <span class="checkout-page-text28"><span>Contact</span></span>
+            <span class="checkout-page-text30"><span><a style="box-shadow: none"
+                  href="./contact#faq">FAQ</a></span></span>
+            <span class="checkout-page-text32"><span><a href="login">Login</a></span></span>
+            <span class="checkout-page-text34">
+              <span><a style="box-shadow: none" href="./sign_up">Sign Up</a></span>
+            </span>
+          </div>
+          <div class="checkout-page-get-help">
+            <span class="checkout-page-text36"><span>Pages</span></span>
+            <span class="checkout-page-text38"><span><a style="box-shadow: none"
+                  href="./homepage">Home</a></span></span>
+            <span class="checkout-page-text40"><span><a style="box-shadow: none" href="./aboutus">About
+                  Us</a></span></span>
+            <span class="checkout-page-text42"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="checkout-page-frame1150">
+            <span class="checkout-page-text44"><span>Terms</span></span>
+            <span class="checkout-page-text46"><span>Privacy</span></span>
+            <span class="checkout-page-text48"><span>Cookies</span></span>
+          </div>
+          <div class="checkout-page-socail-media">
+            <div class="checkout-page-group3591">
+              <div class="checkout-page-group3590">
+                <img src="../static/playground_assets/oval101603-ek9r.svg" alt="Oval101603"
+                  class="checkout-page-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1603-qda.svg" alt="Vector1603"
+                    class="checkout-page-vector" /></a>
+              </div>
+            </div>
+            <div class="checkout-page-group3592">
+              <img src="../static/playground_assets/oval10copy31603-hz9j.svg" alt="Oval10Copy31603"
+                class="checkout-page-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1603-7xxj.svg" alt="IconLucideIcon1603"
+                class="checkout-page-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491603-30tt-200h.png" alt="Ellipse491603"
+              class="checkout-page-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1603-jcpm.svg" alt="bxlgmail1603"
+              class="checkout-page-bxlgmail" />
+          </div>
+          <div class="checkout-page-payments">
+            <img src="../static/playground_assets/vector1603-h41x.svg" alt="Vector1603" class="checkout-page-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1603-pg3r.svg" alt="cibccpaypal1603"
+              class="checkout-page-cibccpaypal" />
+            <img src="../static/playground_assets/vector1603-8x6j.svg" alt="Vector1603" class="checkout-page-vector2" />
+            <img src="../static/playground_assets/vector1603-zxi9.svg" alt="Vector1603" class="checkout-page-vector3" />
+          </div>
+          <span class="checkout-page-text50"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1603-4c26-200w.png" alt="DayflowPlant1603"
+          class="checkout-page-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle251603-lo4s-200h.png" alt="Rectangle251603"
+          class="checkout-page-rectangle25" />
+        <span class="checkout-page-text52">
+          <span class="checkout-page-text53">
+            To view your order status, please
+          </span>
+          <span class="checkout-page-text54"><a style="text-decoration: none;" href="./contact#qsn">Contact
+              us</a></span>
+          <span>here. Thanks in advance for your patience.</span>
+        </span>
+        <span class="checkout-page-text56"><span><a style="text-decoration: none;" href="./products">Products
+              &gt;</a></span></span>
+        <span class="checkout-page-text58">
+          <span><a style="text-decoration: none;" href="./cart-page">Add to Cart &gt;</a></span>
+        </span>
+        <form action="{{ url_for('tp2') }}" method="POST" enctype="multipart/form-data">
+          <div class="checkout-page-productchecklist">
+            <!-- <img src="../static/playground_assets/rectangle4141731-co4p-600h.png" alt="Rectangle4141731"
+              class="checkout-page-rectangle414" /> -->
+            <div class="checkout-page-addressdetails">
+              <span class="checkout-page-text60">
+                <span>Personal Details :</span>
+              </span>
+              <span class="checkout-page-text62">
+                <span>Address Details :</span>
+              </span>
+              <span class="checkout-page-text64">
+                <span>Payment Method :</span>
+              </span>
+              <img src="../static/playground_assets/inputnameoutput1731-p4ji-200h.png" alt="inputnameoutput1731"
+                class="checkout-page-inputnameoutput" />
+              <!-- Username -->
+              <span class="checkout-page-text66">
+              {% if allLogin|length == 0 %}
+                <input class="checkout-page-rectanglename" type="text" name="name" title="name" placeholder="Full Name" required>
+              {% else %}
+                {% for login in allLogin %}
+                  {% if loop.last %}
+                    &nbsp;&nbsp;{{ login.fullname }}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              </span>
+              <!-- Address -->
+              <span class="checkout-page-text68">
+                <input class="checkout-page-rectangleadd" type="text" name="address" title="address" placeholder="Address" required>
+              </span>
+              <!-- Mobile Number -->
+              <span class="checkout-page-text70">
+                <input class="checkout-page-rectanglenumber" id="phone" type="tel" name="phone" title="phone" maxlength="10" placeholder="Mobile Number"
+                  required>
+              </span>
+              <span class="checkout-page-text72"><span></span></span>
+
+              <!-- dropdown payments -->
+              <select class="checkout-page-rectangle416" name="Payment">
+                <option value="COD" selected>COD (Cash On delivery)</option>
+                <option value="UPI" disabled>Google Pay(UPI)</option>
+                <option value="Cards" disabled>Credit and Debit Cards</option>
+              </select>
+            </div>
+            <span class="checkout-page-text75">
+              <!-- <a href="./oneplusdetails"> -->
+                <span id="product" name="product" title="product">
+                    'Oneplus 10r Skin'
+                </span>
+              <!-- </a> -->
+            </span>
+            <span class="checkout-page-text77"><span>Model :</span></span>
+            <span class="checkout-page-text79"><span>Delivery :</span></span>
+            <span class="checkout-page-text81"><span>Discount:</span></span>
+            <span class="checkout-page-text83"><span>₹449.00</span></span>
+            <span class="checkout-page-text85"><span>₹40.00</span></span>
+            <span class="checkout-page-text87"><span>₹100.00</span></span>
+            <span class="checkout-page-text89"><span>₹389.00</span></span>
+            <span class="checkout-page-text91"><span>x1</span></span>
+            <span class="checkout-page-text93"><span>Black Camo</span></span>
+            <span class="checkout-page-text95"><span>Total :</span></span>
+            <img src="../static/playground_assets/onepluscamonavy1603-rooij-200w.png" alt="onepluscamonavy1603"
+              class="checkout-page-onepluscamonavy" />
+            <img src="../static/playground_assets/onepuscampblack1603-nvi5-200w.png" alt="onepuscampblack1603"
+              class="checkout-page-onepuscampblack" />
+          </div>
+          <button class="checkout-page-buy-now-b-t-n" type="submit" style="color:white;  text-decoration: none;" href="{{ url_for('tp2') }}" onclick="meta()">
+            <div class="">
+              <img src="../static/playground_assets/rectangle251751-h11-200h.png" alt="Rectangle251751"
+                class="checkout-page-rectangle251" />
+              <img src="../static/playground_assets/rectangle261751-a0da-200h.png" alt="Rectangle261751"
+                class="checkout-page-rectangle26" />
+              <span class="checkout-page-text97">
+                <span>Place your Order</span>
+              </span>
+          </button>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

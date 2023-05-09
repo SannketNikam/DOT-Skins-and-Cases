@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Oneplus Skins & Cases</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figure,
+    blockquote,
+    figcaption {
+      margin: 0;
+      padding: 0;
+    }
+
+    button {
+      background-color: transparent;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+      outline: 1px dotted ButtonText;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 16px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/oneplusdetails.css') }}">
+</head>
+
+<body>
+  <div>
+
+    <div class="oneplusdetails-container">
+      <div class="oneplusdetails-oneplusdetails">
+        <img src="../static/playground_assets/rectangle241197-pa4r-200h.png" alt="Rectangle241197"
+          class="oneplusdetails-rectangle24" />
+        <div class="oneplusdetails-t-o-p-n-a-v">
+          <span class="oneplusdetails-text"><span><a href="./homepage">Home</a></span></span>
+          <span class="oneplusdetails-text002">
+            <span><a href="./products">Skins &amp; Cases</a></span>
+          </span>
+          <span class="oneplusdetails-text004"><span><a href="./contact">Contact</a></span></span>
+          <span class="oneplusdetails-text006"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="oneplusdetails-text008">
+            <span>
+              {% if allLogin|length == 0 %}
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+              {% else %}
+                {% for login in allLogin %}
+                  {% if loop.last %}
+                  &nbsp;&nbsp;{{ login.fullname }}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            </span>
+          </span>
+          <span class="oneplusdetails-text010">
+            <span><a href="./homepage#S-Ed">Special Edition</a></span>
+          </span>
+          <span class="oneplusdetails-text012"><span><a style="text-decoration: none;"
+                href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1197"
+            class="oneplusdetails-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <div class="oneplusdetails-footer">
+          <span class="oneplusdetails-text014">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="oneplusdetails-services-footer">
+            <span class="oneplusdetails-text016"><span>Product</span></span>
+            <span class="oneplusdetails-text018">
+              <span><a style="box-shadow: none" href="./products">Skin &amp; Cases</a></span>
+            </span>
+            <span class="oneplusdetails-text020">
+              <span><a style="box-shadow: none" href="./iphonedetails">iPhone</a></span>
+            </span>
+            <span class="oneplusdetails-text022">
+              <span><a style="box-shadow: none" href="./googledetails">Google</a></span>
+            </span>
+            <span class="oneplusdetails-text024">
+              <span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span>
+            </span>
+          </div>
+          <div class="oneplusdetails-company">
+            <span class="oneplusdetails-text026"><span>Contact</span></span>
+            <span class="oneplusdetails-text028"><span><a style="box-shadow: none"
+                  href="./contact#faq">FAQ</a></span></span>
+            <span class="oneplusdetails-text030"><span><a href="./login">Login</a></span></span>
+            <span class="oneplusdetails-text032">
+              <span><a style="box-shadow: none" href="./sign_up">Sign Up</a></span>
+            </span>
+          </div>
+          <div class="oneplusdetails-get-help">
+            <span class="oneplusdetails-text034"><span>Pages</span></span>
+            <span class="oneplusdetails-text036"><span><a style="box-shadow: none"
+                  href="./homepage">Home</a></span></span>
+            <span class="oneplusdetails-text038"><span><a style="box-shadow: none" href="./aboutus">About
+                  Us</a></span></span>
+            <span class="oneplusdetails-text040"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="oneplusdetails-frame1150">
+            <span class="oneplusdetails-text042"><span>Terms</span></span>
+            <span class="oneplusdetails-text044"><span>Privacy</span></span>
+            <span class="oneplusdetails-text046"><span>Cookies</span></span>
+          </div>
+          <div class="oneplusdetails-socail-media">
+            <div class="oneplusdetails-group3591">
+              <div class="oneplusdetails-group3590">
+                <img src="../static/playground_assets/oval101197-mrdn.svg" alt="Oval101197"
+                  class="oneplusdetails-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1197-nqi.svg" alt="Vector1197"
+                    class="oneplusdetails-vector" /></a>
+              </div>
+            </div>
+            <div class="oneplusdetails-group3592">
+              <img src="../static/playground_assets/oval10copy31197-4v0u.svg" alt="Oval10Copy31197"
+                class="oneplusdetails-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1197-dsb6o.svg" alt="IconLucideIcon1197"
+                class="oneplusdetails-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491197-vq3o-200h.png" alt="Ellipse491197"
+              class="oneplusdetails-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1197-dpzc.svg" alt="bxlgmail1197"
+              class="oneplusdetails-bxlgmail" />
+          </div>
+          <div class="oneplusdetails-payments">
+            <img src="../static/playground_assets/vector1197-u2tl.svg" alt="Vector1197"
+              class="oneplusdetails-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1197-wjrp.svg" alt="cibccpaypal1197"
+              class="oneplusdetails-cibccpaypal" />
+            <img src="../static/playground_assets/vector1197-qapo.svg" alt="Vector1197"
+              class="oneplusdetails-vector2" />
+            <img src="../static/playground_assets/vector1197-5hw.svg" alt="Vector1197" class="oneplusdetails-vector3" />
+          </div>
+          <span class="oneplusdetails-text048"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/dayflowplant1197-zywd-200w.png" alt="DayflowPlant1197"
+          class="oneplusdetails-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle251197-am13-300h.png" alt="Rectangle251197"
+          class="oneplusdetails-rectangle25" />
+        <span class="oneplusdetails-text050">
+          <span>
+            For now DOT offers a limited selection of iPhone, Samsung, Google
+            skins, including the latest iPhone 14 skins. Is the hype real?
+            Before out of stocks, Customize your Device skin to find out.
+          </span>
+        </span>
+        <span class="oneplusdetails-text052">
+          <span>OnePlus Skins &amp; Cases</span>
+        </span>
+        <img src="../static/playground_assets/rectangle281197-empo-400h.png" alt="Rectangle281197"
+          class="oneplusdetails-rectangle28" />
+        <img src="../static/playground_assets/rectangle321197-dk5-400h.png" alt="Rectangle321197"
+          class="oneplusdetails-rectangle32" />
+        <img src="../static/playground_assets/rectangle301197-qd2m-400h.png" alt="Rectangle301197"
+          class="oneplusdetails-rectangle30" />
+        <img src="../static/playground_assets/rectangle331197-gnq-400h.png" alt="Rectangle331197"
+          class="oneplusdetails-rectangle33" />
+        <img src="../static/playground_assets/rectangle311197-9nz2-400h.png" alt="Rectangle311197"
+          class="oneplusdetails-rectangle31" />
+        <img src="../static/playground_assets/rectangle341197-5q2-400h.png" alt="Rectangle341197"
+          class="oneplusdetails-rectangle34" />
+        <img src="../static/playground_assets/rectangle291197-zbo-400h.png" alt="Rectangle291197"
+          class="oneplusdetails-rectangle29" />
+        <img src="../static/playground_assets/rectangle351197-dfgg-400h.png" alt="Rectangle351197"
+          class="oneplusdetails-rectangle35" />
+        <span class="oneplusdetails-text054"><span>Swarm</span></span>
+        <span class="oneplusdetails-text056"><span>Melow Yellow</span></span>
+        <span class="oneplusdetails-text058"><span>Green Camo</span></span>
+        <span class="oneplusdetails-text060"><span>White Marble</span></span>
+        <span class="oneplusdetails-text062"><span>Grafiti</span></span>
+        <span class="oneplusdetails-text064"><span>Navy Camo</span></span>
+        <span class="oneplusdetails-text066"><span>Teardown</span></span>
+        <span class="oneplusdetails-text068"><span>Red Pastel</span></span>
+        <span class="oneplusdetails-text070"><span>₹499</span></span>
+        <span class="oneplusdetails-text072"><span>₹499</span></span>
+        <span class="oneplusdetails-text074"><span>₹499</span></span>
+        <span class="oneplusdetails-text076"><span>₹499</span></span>
+        <span class="oneplusdetails-text078"><span>₹499</span></span>
+        <span class="oneplusdetails-text080"><span>₹499</span></span>
+        <span class="oneplusdetails-text082"><span>₹499</span></span>
+        <span class="oneplusdetails-text084"><span>₹499</span></span>
+        <span class="oneplusdetails-text086"><span>₹699</span></span>
+        <span class="oneplusdetails-text088"><span>₹699</span></span>
+        <span class="oneplusdetails-text090"><span>₹699</span></span>
+        <span class="oneplusdetails-text092"><span>₹699</span></span>
+        <span class="oneplusdetails-text094"><span>₹699</span></span>
+        <span class="oneplusdetails-text096"><span>₹699</span></span>
+        <span class="oneplusdetails-text098"><span>₹699</span></span>
+        <span class="oneplusdetails-text100"><span>₹699</span></span>
+        <span class="oneplusdetails-text102">
+          <span>Recommendations</span>
+        </span>
+        <span class="oneplusdetails-text104">
+          <span>For hide-and-seek enthusiasts.</span>
+        </span>
+        <div class="oneplusdetails-buynow">
+          <span class="oneplusdetails-text106"><span>₹449.00</span></span>
+          <span class="oneplusdetails-text108"><span>₹689.00</span></span>
+          <span class="oneplusdetails-text110"><span>Black Camo</span></span>
+          <span class="oneplusdetails-text112">
+            <span>
+              Are you a nocturnal basement dweller who hasn't seen the sun in
+              years? Excellent. Black Camo complements your life choices
+              perfectly.
+            </span>
+          </span>
+          <div class="oneplusdetails-buy-now-b-t-n">
+            <img src="../static/playground_assets/rectangle251198-0gwb-200h.png" alt="Rectangle251198"
+              class="oneplusdetails-rectangle251" />
+            <a href="./checkout-page"><img src="../static/playground_assets/rectangle261198-hu4-200h.png"
+                alt="Rectangle261198" class="oneplusdetails-rectangle26" /></a>
+            <span class="oneplusdetails-text114"><a style="color: white; text-decoration: none;"
+                href="./checkout-page"><span>Buy Now</a></span></span>
+          </div>
+          <div class="oneplusdetails-add-cart-b-t-n">
+            <img src="../static/playground_assets/rectangle251198-jm39-200h.png" alt="Rectangle251198"
+              class="oneplusdetails-rectangle252" />
+            <a href="./cart-page"><img src="../static/playground_assets/rectangle261198-mev-200h.png"
+                alt="Rectangle261198" class="oneplusdetails-rectangle261" /></a>
+            <span class="oneplusdetails-text116">
+              <a style="color: white; text-decoration:none;" href="./cart-page"><span>Add To Cart</span></a>
+            </span>
+          </div>
+        </div>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/onepluscamonavy1198-1vom-300w.png" alt="onepluscamonavy1198"
+            class="oneplusdetails-onepluscamonavy" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/onepuscampblack1198-oqsg-300w.png" alt="onepuscampblack1198"
+            class="oneplusdetails-onepuscampblack" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image391198-g7yb-200w.png" alt="image391198"
+            class="oneplusdetails-image39" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/onepluscamonavy1198-bfx-200w.png" alt="onepluscamonavy1198"
+            class="oneplusdetails-onepluscamonavy1" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image401198-ywe-200w.png" alt="image401198"
+            class="oneplusdetails-image40" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image361198-4zcp-200w.png" alt="image361198"
+            class="oneplusdetails-image36" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image351198-aatp-200w.png" alt="image351198"
+            class="oneplusdetails-image35" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image411198-ezea-200w.png" alt="image411198"
+            class="oneplusdetails-image41" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image371198-dqlj-200w.png" alt="image371198"
+            class="oneplusdetails-image37" />
+        </a>
+        <a href="./products#flw3">
+          <img src="../static/playground_assets/image421198-3ky-200w.png" alt="image421198"
+            class="oneplusdetails-image42" />
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

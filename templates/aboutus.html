@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <style data-tag="reset-style-sheet">
+    html {
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    input {
+      padding: 2px 4px;
+    }
+
+    img {
+      display: block;
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+  </style>
+  <style data-tag="default-style-sheet">
+    html {
+      font-family: Inter;
+      font-size: 12px;
+    }
+
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      color: var(--dl-color-gray-black);
+      background-color: var(--dl-color-gray-white);
+
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link href="{{ url_for('static', filename='css/aboutus.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <div>
+
+    <div class="aboutus-container">
+      <div class="aboutus-aboutus">
+        <img src="../static/playground_assets/rectangle241103-mmzh-2000w.png" alt="Rectangle241103"
+          class="aboutus-rectangle24" />
+        <div class="aboutus-t-o-p-n-a-v">
+          <span class="aboutus-text"><span><a href="./homepage">Home</a></span></span>
+          <span class="aboutus-text02"><span><a href="./products">Skins &amp; Cases</a></span></span>
+          <span class="aboutus-text04"><span><a href="./contact">Contact</a></span></span>
+          <span class="aboutus-text06"><span><a href="./aboutus#mtad">About Us</a></span></span>
+          <span class="aboutus-text08"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </span></span>
+          <span class="aboutus-text10"><span><a href="./homepage#S-Ed">Special
+                Edition</a></span></span>
+                <span class="aboutus-text12"><span><a style="text-decoration: none;" href="./homepage">DOT.</a></span></span>
+          <a href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled1103"
+            class="aboutus-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <span class="aboutus-text14"><span>Who are we ?</span></span>
+        <span class="aboutus-text16"><span>DOT.</span></span>
+          <img src="../static/playground_assets/coolkidsselect1103-w7i-200h.png" alt="CoolKidsSelect1103"
+          class="aboutus-cool-kids-select" />
+        <img src="../static/playground_assets/dayflowplant1103-vwid-200w.png" alt="DayflowPlant1103"
+          class="aboutus-dayflow-plant" />
+        <span class="aboutus-text18">
+          <span>More than Just Some Fancy Graphics !</span>
+        </span>
+        <span class="aboutus-text20">
+          <span>fondness and The act of endowing for creative minds.</span>
+        </span>
+        <img src="../static/playground_assets/samsungpink1103-il6c-200w.png" alt="samsungpink1103"
+          class="aboutus-samsungpink" />
+        <img id="mtad" src="../static/playground_assets/rectangle71124-oudw-1600h.png" alt="Rectangle71124"
+          class="aboutus-rectangle7" />
+        <img src="../static/playground_assets/rectangle251124-ak64-300h.png" alt="Rectangle251124"
+          class="aboutus-rectangle25" />
+        <span class="aboutus-text22">
+          <span class="aboutus-text23">
+            DOT skins and Cases is Semester Project created by
+          </span>
+          <span class="aboutus-text24"><a href="https://linktr.ee/SannketNikam"> Sanket Nikam</a></span>
+          <span>and</span>
+          <span class="aboutus-text24"><a href="https://linktr.ee/AtharshB">Atharsh Bodke.</a></span>
+        </span>
+        <span class="aboutus-text27">
+          <span>
+            <span>
+              DOT Skins &amp; Cases brings to you the coolest new way to make
+              your digital lifestyle more exciting: allowing you to makeover
+              your mobile and digital devices as an expression of your own
+              unique identity. With removable, adhesive-backed, premium vinyl
+              skins that protect and personalize your electronic device at the
+              same time. We create quality cases and skins to protect your
+              smartphone, gaming device, tablet, laptop, audio device and
+              more! Show your passion with branded designs or create something
+              new and unique to you.
+            </span>
+            <br />
+            <span></span>
+            <br />
+            <span>
+              Personalize any electronic device with premium 3M vinyl decal
+              skins artfully crafted to precisely fit any phone, tablet,
+              gaming or audio device. Our goal from day one was to be the best
+              in protection, while still offering an affordable, stylish
+              solution to bulky cases.
+            </span>
+            <br />
+            <span></span>
+            <br />
+            <span>
+              As DOT Skins and Cases grows, we will continue to work to
+              improve design and protection while maintaining the true style
+              of the device.
+            </span>
+          </span>
+        </span>
+        <span class="aboutus-text38"><span>More than a DOT.</span></span>
+        <span class="aboutus-text40"><span>Our Team</span></span>
+        <div class="aboutus-footer">
+          <span class="aboutus-text42">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="aboutus-services-footer">
+            <span class="aboutus-text44"><span>Product</span></span>
+            <span class="aboutus-text46"><span><a style="box-shadow: none" href="./products">Skin &amp;
+                  Cases</a></span></span>
+            <span class="aboutus-text48"><span><a style="box-shadow: none"
+                  href="./iphonedetails">iPhone</a></span></span>
+            <span class="aboutus-text50"><span><a style="box-shadow: none"
+                  href="./googledetails">Google</a></span></span>
+            <span class="aboutus-text52"><span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span></span>
+          </div>
+          <div class="aboutus-company">
+            <span class="aboutus-text54"><span>Contact</span></span>
+            <span class="aboutus-text56"><span><a style="box-shadow: none" href="./contact#faq">FAQ</a></span></span>
+            <span class="aboutus-text58"><span><a style="box-shadow: none"
+                  href="./login">Login</a></span></span>
+            <span class="aboutus-text60"><span><a style="box-shadow: none"
+                  href="./sign_up">Sign Up</a></span></span>
+          </div>
+          <div class="aboutus-get-help">
+            <span class="aboutus-text62"><span>Pages</span></span>
+            <span class="aboutus-text64"><span><a style="box-shadow: none" href="./homepage">Home</a></span></span>
+            <span class="aboutus-text66"><span><a style="box-shadow: none" href="./aboutus#mtad">About
+                  Us</a></span></span>
+            <span class="aboutus-text68"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="aboutus-frame1150">
+            <span class="aboutus-text70"><span>Terms</span></span>
+            <span class="aboutus-text72"><span>Privacy</span></span>
+            <span class="aboutus-text74"><span>Cookies</span></span>
+          </div>
+          <div class="aboutus-socail-media">
+            <div class="aboutus-group3591">
+              <div class="aboutus-group3590">
+                <img src="../static/playground_assets/oval101171-b2s6.svg" alt="Oval101171" class="aboutus-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1171-eusd.svg" alt="Vector1171"
+                    class="aboutus-vector" /></a>
+              </div>
+            </div>
+            <div class="aboutus-group3592">
+              <img src="../static/playground_assets/oval10copy31171-ypg.svg" alt="Oval10Copy31171"
+                class="aboutus-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1171-6kj6.svg" alt="IconLucideIcon1171"
+                class="aboutus-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491171-y2x-200h.png" alt="Ellipse491171"
+              class="aboutus-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1171-1uqm.svg" alt="bxlgmail1171" class="aboutus-bxlgmail" />
+          </div>
+          <div class="aboutus-payments">
+            <img src="../static/playground_assets/vector1171-2d3e.svg" alt="Vector1171" class="aboutus-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1171-yd9d.svg" alt="cibccpaypal1171"
+              class="aboutus-cibccpaypal" />
+            <img src="../static/playground_assets/vector1172-4kg2.svg" alt="Vector1172" class="aboutus-vector2" />
+            <img src="../static/playground_assets/vector1172-aep.svg" alt="Vector1172" class="aboutus-vector3" />
+          </div>
+          <span class="aboutus-text76"><span>DOT.</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

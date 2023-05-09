@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>DOT | Home Page</title>
+  <meta http-equiv = "refresh" content = "0; url =/homepage" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+
+  <style data-tag="default-style-sheet">
+    body {
+      font-weight: 400;
+      font-style: normal;
+      text-decoration: none;
+      text-transform: none;
+      letter-spacing: normal;
+      line-height: 1.15;
+      scroll-behavior: smooth;
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    data-tag="font" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/homepage.css') }}" />
+</head>
+
+<body>
+  <div>
+
+    <div class="index-container">
+      <div class="index-index">
+        <img src="../static/playground_assets/rectangle245776-y357-2000w.png" alt="Rectangle245776"
+          class="index-rectangle24" />
+        <img src="../static/playground_assets/rectangle255777-jydb-2000w.png" alt="Rectangle255777"
+          class="index-rectangle25" />
+        <img src="../static/playground_assets/ellipse505711-17r5-200h.png" alt="Ellipse505711"
+          class="index-ellipse50" />
+        <img src="../static/playground_assets/ellipse515711-p1hl-200h.png" alt="Ellipse515711"
+          class="index-ellipse51" />
+        <img src="../static/playground_assets/ellipse525711-ltxs-200h.png" alt="Ellipse525711"
+          class="index-ellipse52" />
+        <img src="../static/playground_assets/ellipse535712-5tb6-200h.png" alt="Ellipse535712"
+          class="index-ellipse53" />
+        <img src="../static/playground_assets/samsungblue5798-uxyj-200w.png" alt="samsungblue5798"
+          class="index-samsungblue" />
+        <div class="index-t-o-p-n-a-v">
+          <span class="index-text"><span><a href="./homepage"> Home </a></span></span>
+          <span class="index-text002"><span><a href="./products">Skins &amp; Cases</a></span></span>
+          <span class="index-text004"><span><a href="./contact">Contact </a></span></span>
+          <span class="index-text006"><span><a href="./aboutus">About Us</a></span></span>
+          <span class="index-text008"><span>
+            {% if allLogin|length == 0 %}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login">Guest User</a>
+            {% else %}
+              {% for login in allLogin %}
+                {% if loop.last %}
+                &nbsp;&nbsp;{{ login.fullname }}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            </span></span>
+          <span class="index-text010"><span><a href="./homepage#S-Ed">Special Edition</a></span></span>
+          <span class="index-text012"><span><a style="text-decoration: none;" href="./homepage">DOT.</a></span></span>
+          <!-- Profile to Logout -->
+          <a title="Logout" href="/delete">
+            <img src="../static/playground_assets/mdi_logout.png" alt="carbonuseravatarfilled5787"
+            class="index-carbonuseravatarfilled" />
+          </a>
+        </div>
+        <span class="index-text014">
+          <span class="index-text015">
+            <span>Dote over Personality</span>
+            <br />
+            <span>DOT.</span>
+          </span>
+          <span class="index-text019"></span>
+          <span>for Creativity</span>
+        </span>
+        <span class="index-text021"><span>What We Do</span></span>
+        <div class="index-b-t-n1">
+          <img src="../static/playground_assets/rectangle255793-kctr-200h.png" alt="Rectangle255793"
+            class="index-rectangle251" />
+          <img src="../static/playground_assets/rectangle265794-d88-200h.png" alt="Rectangle265794"
+            class="index-rectangle26" />
+          <span class="index-text023"><span><a href="./products">Shop Now</a></span></span>
+          <span class="index-text025"><span><a style="text-decoration: none; color: white;" href="./products">Shop
+                Now</a></span></span>
+        </div>
+        <div class="index-b-t-n2">
+          <img src="../static/playground_assets/rectangle255711-ran-200h.png" alt="Rectangle255711"
+            class="index-rectangle252" />
+          <img src="../static/playground_assets/rectangle265711-v6r-200h.png" alt="Rectangle265711"
+            class="index-rectangle261" />
+          <span class="index-text027"><span><a style="text-decoration: none; color: white;" href="./aboutus">Learn
+                more</a></span></span>
+        </div>
+        <div class="index-phonesgroup">
+          <img src="../static/playground_assets/samsungnavyblue5799-u40e-200w.png" alt="samsungnavyblue5799"
+            class="index-samsungnavyblue" />
+          <img src="../static/playground_assets/iphoneteardown5710-rr6-300w.png" alt="iphoneteardown5710"
+            class="index-iphoneteardown" />
+        </div>
+        <span class="index-text029">
+          <span>
+            <span>
+              DOT Skins &amp; Cases brings to you the coolest new way to make
+              your digital lifestyle more exciting: allowing you to makeover
+              your mobile and digital devices as an expression of your own
+              unique identity.
+            </span>
+            <br />
+            <span></span>
+            <br />
+            <span>
+              . We create quality cases and skins to protect your smartphone,
+              gaming device, tablet, laptop, audio device and more! Show your
+              passion with branded designs or create something new and unique
+              to you.
+            </span>
+          </span>
+        </span>
+        <span class="index-text036">
+          <span>*Premium Skins and Cases</span>
+        </span>
+        <img src="../static/playground_assets/coolkidsselect5710-fir-200h.png" alt="CoolKidsSelect5710"
+          class="index-cool-kids-select" />
+        <img src="../static/playground_assets/dayflowplant5710-h6ss-200w.png" alt="DayflowPlant5710"
+          class="index-dayflow-plant" />
+        <img src="../static/playground_assets/rectangle75711-cy9a-800h.png" alt="Rectangle75711"
+          class="index-rectangle7" />
+        <span class="index-text038"><span>Featured Collections</span></span>
+        <span id="S-Ed" class="index-text040"><span>Popular Collections</span></span>
+        <img src="../static/playground_assets/rectangle85710-f5o7-600w.png" alt="Rectangle85710"
+          class="index-rectangle8" />
+        <img src="../static/playground_assets/rectangle105710-zv9l.svg" alt="Rectangle105710"
+          class="index-rectangle10" />
+        <img src="../static/playground_assets/rectangle115711-emcl.svg" alt="Rectangle115711"
+          class="index-rectangle11" />
+        <span class="index-text042"><span>What customer says</span></span>
+        <img src="../static/playground_assets/bg9292-olfe.svg" alt="BG9292" class="index-b-g" />
+        <img src="../static/playground_assets/image9293-nehb.svg" alt="Image9293" class="index-image" />
+        <img src="../static/playground_assets/bg9294-yco1i.svg" alt="BG9294" class="index-b-g1" />
+        <div class="index-frame62">
+          <img src="../static/playground_assets/iconfeathericon9296-2ata.svg" alt="IconFeatherIcon9296"
+            class="index-icon-feather-icon" />
+          <img src="../static/playground_assets/iconfeathericon9297-23eh.svg" alt="IconFeatherIcon9297"
+            class="index-icon-feather-icon01" />
+          <img src="../static/playground_assets/iconfeathericon9298-dtbo.svg" alt="IconFeatherIcon9298"
+            class="index-icon-feather-icon02" />
+          <img src="../static/playground_assets/iconfeathericon9299-b5jf.svg" alt="IconFeatherIcon9299"
+            class="index-icon-feather-icon03" />
+          <img src="../static/playground_assets/iconfeathericon9210-fxf4.svg" alt="IconFeatherIcon9210"
+            class="index-icon-feather-icon04" />
+        </div>
+        <img src="../static/playground_assets/iconfeathericon9612-4yl8.svg" alt="IconFeatherIcon9612"
+          class="index-icon-feather-icon05" />
+        <img src="../static/playground_assets/iconfeathericon9614-tjto.svg" alt="IconFeatherIcon9614"
+          class="index-icon-feather-icon06" />
+        <img src="../static/playground_assets/iconfeathericon9612-1bbx.svg" alt="IconFeatherIcon9612"
+          class="index-icon-feather-icon07" />
+        <img src="../static/playground_assets/iconfeathericon9614-k36.svg" alt="IconFeatherIcon9614"
+          class="index-icon-feather-icon08" />
+        <img src="../static/playground_assets/iconfeathericon9612-fymj.svg" alt="IconFeatherIcon9612"
+          class="index-icon-feather-icon09" />
+        <img src="../static/playground_assets/iconfeathericon9614-led5.svg" alt="IconFeatherIcon9614"
+          class="index-icon-feather-icon10" />
+        <img src="../static/playground_assets/iconfeathericon9612-s26g.svg" alt="IconFeatherIcon9612"
+          class="index-icon-feather-icon11" />
+        <img src="../static/playground_assets/iconfeathericon9614-61p7.svg" alt="IconFeatherIcon9614"
+          class="index-icon-feather-icon12" />
+        <img src="../static/playground_assets/iconfeathericon9612-dq5.svg" alt="IconFeatherIcon9612"
+          class="index-icon-feather-icon13" />
+        <img src="../static/playground_assets/iconfeathericon9614-gykq.svg" alt="IconFeatherIcon9614"
+          class="index-icon-feather-icon14" />
+        <div class="index-frame63">
+          <div class="index-avatar">
+            <img src="../static/playground_assets/ellipse2i921-oi2-200h.png" alt="Ellipse2I921"
+              class="index-ellipse2" />
+          </div>
+          <span class="index-text044"><span>Sanket Nikam</span></span>
+        </div>
+        <div class="index-frame1134">
+          <div class="index-avatar1">
+            <img src="../static/playground_assets/ellipse2i921-53-200h.png" alt="Ellipse2I921"
+              class="index-ellipse21" />
+          </div>
+          <span class="index-text046"><span>Atharsh Bodke</span></span>
+        </div>
+        <div class="index-frame1136">
+          <div class="index-avatar2">
+            <img src="../static/playground_assets/ellipse2i921-7zpe-200h.png" alt="Ellipse2I921"
+              class="index-ellipse22" />
+          </div>
+          <span class="index-text048"><span>Sahil Biradar</span></span>
+        </div>
+        <span class="index-text050">
+          <span>
+            Overall a very beautiful experience from the beginning of the
+            order to the unboxing of the product. High-quality product. It
+            looks awesome, thanks DOT.
+          </span>
+        </span>
+        <span class="index-text052">
+          <span>
+            Great company, great customer service experience and Cases are top
+            notch and the skins are just the chef’s kiss.
+          </span>
+        </span>
+        <span class="index-text054">
+          <span>
+            <span>DOT Website looks premium and amazing. aesthetically</span>
+            <br />
+            <span>pleasing in real manners</span>
+          </span>
+        </span>
+        <a href="./googledetails"><img src="../static/playground_assets/rectangle128269-w2b-300w.png"
+            alt="Rectangle128269" class="index-rectangle12" /></a>
+        <a href="./iphonedetails"><img src="../static/playground_assets/rectangle268768-z3x-300w.png"
+            alt="Rectangle268768" class="index-rectangle262" /></a>
+        <a href="./googledetails"><img src="../static/playground_assets/rectangle138270-hq5-300w.png"
+            alt="Rectangle138270" class="index-rectangle13" /></a>
+        <img src="../static/playground_assets/rectangle278769-b1xn-300w.png" alt="Rectangle278769"
+          class="index-rectangle27" />
+        <img src="../static/playground_assets/rectangle148271-iy1-300w.png" alt="Rectangle148271"
+          class="index-rectangle14" />
+        <img src="../static/playground_assets/rectangle288770-qke7-300w.png" alt="Rectangle288770"
+          class="index-rectangle28" />
+        <img src="../static/playground_assets/rectangle158272-s5m-300w.png" alt="Rectangle158272"
+          class="index-rectangle15" />
+        <img src="../static/playground_assets/rectangle298771-tb2i-300w.png" alt="Rectangle298771"
+          class="index-rectangle29" />
+        <span class="index-text059"><span>Carbon fibre</span></span>
+        <span class="index-text061"><span>Glitch Camo</span></span>
+        <span class="index-text063"><span>Sea Blue</span></span>
+        <span class="index-text065"><span>Concrete</span></span>
+        <span class="index-text067"><span>Teardown</span></span>
+        <span class="index-text069"><span>Ran Leather</span></span>
+        <span class="index-text071"><span>MKBHD Icons</span></span>
+        <span class="index-text073"><span>Black Camo</span></span>
+        <span class="index-text075"><span>₹499</span></span>
+        <span class="index-text077"><span>₹499</span></span>
+        <span class="index-text079"><span>₹499</span></span>
+        <span class="index-text081"><span>₹499</span></span>
+        <span class="index-text083"><span>₹499</span></span>
+        <span class="index-text085"><span>₹499</span></span>
+        <span class="index-text087"><span>₹499</span></span>
+        <span class="index-text089"><span>₹499</span></span>
+        <span class="index-text091"><span>₹699</span></span>
+        <span class="index-text093"><span>₹899</span></span>
+        <span class="index-text095"><span>₹699</span></span>
+        <span class="index-text097"><span>₹699</span></span>
+        <span class="index-text099"><span>₹699</span></span>
+        <span class="index-text101"><span>₹699</span></span>
+        <span class="index-text103"><span>₹899</span></span>
+        <span class="index-text105"><span>₹759</span></span>
+        <a href="./googledetails"><img src="../static/playground_assets/image38984-4wgm-200w.png" alt="image38984"
+            class="index-image3" /></a>
+        <a href="./googledetails"><img src="../static/playground_assets/image49289-bdh-200w.png" alt="image49289"
+            class="index-image4" /></a>
+        <a href="./googledetails"><img src="../static/playground_assets/image59222-6b6j-200w.png" alt="image59222"
+            class="index-image5" /></a>
+        <a href="./iphonedetails"><img src="../static/playground_assets/image69491-3iap-200w.png" alt="image69491"
+            class="index-image6" /></a>
+        <a href="./iphonedetails"><img src="../static/playground_assets/image79495-j5f-200w.png" alt="image79495"
+            class="index-image7" /></a>
+        <a href="./googledetails"><img src="../static/playground_assets/image89698-0c3m-200w.png" alt="image89698"
+            class="index-image8" /></a>
+        <a href="./oneplusdetails"><img src="../static/playground_assets/image99610-3xop-200w.png" alt="image99610"
+            class="index-image9" /></a>
+        <a href="./iphonedetails"><img src="../static/playground_assets/image109610-lcb-200w.png" alt="image109610"
+            class="index-image10" /></a>
+        <div class="index-c-t-a3">
+          <img src="../static/playground_assets/rectangle169610-082g.svg" alt="Rectangle169610"
+            class="index-rectangle16" />
+          <span class="index-text107">
+            <span>Customize your Devices now !</span>
+          </span>
+          <span class="index-text109">
+            <span>
+              Hit the button to see what we've got ? Brand new design with
+              your creativity. Get in touch with us.
+            </span>
+          </span>
+          <div class="index-b-t-n3">
+            <img src="../static/playground_assets/rectangle259611-4icq-200h.png" alt="Rectangle259611"
+              class="index-rectangle253" />
+            <img src="../static/playground_assets/rectangle269611-7msm-200h.png" alt="Rectangle269611"
+              class="index-rectangle263" />
+            <span class="index-text111"><span><a style="color: white; text-decoration:none;" href="./contact#ctn">Get
+                  in Touch</a></span></span>
+          </div>
+        </div>
+        <span class="index-text113">
+          <span class="index-text114">
+            <span>Dote over Personality</span>
+            <br />
+            <span>DOT.</span>
+          </span>
+          <span class="index-text118"></span>
+          <span>for Creativity</span>
+        </span>
+        <img src="../static/playground_assets/coolkidsselect5771-d23r-200h.png" alt="CoolKidsSelect5771"
+          class="index-cool-kids-select1" />
+        <div class="index-footer">
+          <span class="index-text120">
+            <span>
+              Looking to find out more? Join our Team now. Get in touch with
+              us.
+            </span>
+          </span>
+          <div class="index-services-footer">
+            <span class="index-text122"><span>Product</span></span>
+            <span class="index-text124"><span><a style="box-shadow: none" href="./products">Skin &amp;
+                  Cases</a></span></span>
+            <span class="index-text126"><span><a style="box-shadow: none"
+                  href="./iphonedetails">iPhone</a></span></span>
+            <span class="index-text128"><span><a style="box-shadow: none"
+                  href="./googledetails">Google</a></span></span>
+            <span class="index-text130"><span><a style="box-shadow: none" href="./oneplusdetails">One
+                  Plus</a></span></span>
+          </div>
+          <div class="index-company">
+            <span class="index-text132"><span>Contact</span></span>
+            <span class="index-text134"><span><a style="box-shadow: none" href="./contact#faq">FAQ</a></span></span>
+            <span class="index-text136"><span><a style="box-shadow: none" href="login">Login</a></span></span>
+            <span class="index-text138"><span><a style="box-shadow: none"
+                  href="./sign_up">Sign Up</a></span></span>
+          </div>
+          <div class="index-get-help">
+            <span class="index-text140"><span>Pages</span></span>
+            <span class="index-text142"><span><a style="box-shadow: none" href="./homepage">Home</a></span></span>
+            <span class="index-text144"><span><a style="box-shadow: none" href="./aboutus">About
+                  Us</a></span></span>
+            <span class="index-text146"><span><a style="box-shadow: none"
+                  href="./contact#c-r7">Contact</a></span></span>
+          </div>
+          <div class="index-frame1150">
+            <span class="index-text148"><span>Terms</span></span>
+            <span class="index-text150"><span>Privacy</span></span>
+            <span class="index-text152"><span>Cookies</span></span>
+          </div>
+          <div class="index-socail-media">
+            <div class="index-group3591">
+              <div class="index-group3590">
+                <img src="../static/playground_assets/oval101172-avjl.svg" alt="Oval101172" class="index-oval10" />
+                <a href="https://github.com/SannketNikam/DOT-Skins-and-Cases">
+                  <img src="../static/playground_assets/vector1172-039.svg" alt="Vector1172" class="index-vector" /></a>
+              </div>
+            </div>
+            <div class="index-group3592">
+              <img src="../static/playground_assets/oval10copy31172-gzxl.svg" alt="Oval10Copy31172"
+                class="index-oval10copy3" />
+              <img src="../static/playground_assets/iconlucideicon1172-jhb5.svg" alt="IconLucideIcon1172"
+                class="index-icon-lucide-icon" />
+            </div>
+            <img src="../static/playground_assets/ellipse491172-xput-200h.png" alt="Ellipse491172"
+              class="index-ellipse49" />
+            <img src="../static/playground_assets/bxlgmail1172-2bb.svg" alt="bxlgmail1172" class="index-bxlgmail" />
+          </div>
+          <div class="index-payments">
+            <img src="../static/playground_assets/vector1172-tr8l.svg" alt="Vector1172" class="index-vector1" />
+            <img src="../static/playground_assets/cibccpaypal1172-nsoc.svg" alt="cibccpaypal1172"
+              class="index-cibccpaypal" />
+            <img src="../static/playground_assets/vector1172-e0ms.svg" alt="Vector1172" class="index-vector2" />
+            <img src="../static/playground_assets/vector1172-d7ou.svg" alt="Vector1172" class="index-vector3" />
+          </div>
+          <span class="index-text154"><span>DOT.</span></span>
+        </div>
+        <img src="../static/playground_assets/carbonpixel1198-o0ho-300w.png" alt="carbonpixel1198"
+          class="index-carbonpixel" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
